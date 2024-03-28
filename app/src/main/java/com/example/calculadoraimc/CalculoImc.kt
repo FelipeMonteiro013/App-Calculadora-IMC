@@ -5,7 +5,7 @@ import kotlin.math.pow
 
 fun calcularImc(pesoUsuario: Double, alturaUsuario: Double): Double {
 
-    var imc = pesoUsuario / (alturaUsuario / 100).pow(2)
+    val imc = pesoUsuario / (alturaUsuario / 100).pow(2)
 
     if (imc >= 100){
         return pesoUsuario / (alturaUsuario * alturaUsuario)
